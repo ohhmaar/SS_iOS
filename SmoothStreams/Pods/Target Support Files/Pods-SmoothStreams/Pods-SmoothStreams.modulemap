@@ -1,0 +1,6 @@
+framework module Pods_SmoothStreams {
+  umbrella header "Pods-SmoothStreams-umbrella.h"
+
+  export *
+  module * { export * }
+}

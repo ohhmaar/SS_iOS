@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07121BA21C867FC100D436FA /* SmoothStreamsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */; };
+		074734AB1C7E1C07006D8D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074734AA1C7E1C07006D8D94 /* AppDelegate.swift */; };
+		074734AD1C7E1C07006D8D94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074734AC1C7E1C07006D8D94 /* LoginViewController.swift */; };
+		074734B01C7E1C07006D8D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734AE1C7E1C07006D8D94 /* Main.storyboard */; };
+		074734B21C7E1C07006D8D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074734B11C7E1C07006D8D94 /* Assets.xcassets */; };
+		074734B51C7E1C07006D8D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */; };
+		07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */; };
+		07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */; };
+		A167C28E1868380007F490D9 /* Pods_SmoothStreams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CFE76EA35D879ED0E559CB /* Pods_SmoothStreams.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02CFE76EA35D879ED0E559CB /* Pods_SmoothStreams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothStreams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothStreamsAPI.swift; sourceTree = SOURCE_ROOT; };
+		074734A71C7E1C07006D8D94 /* SmoothStreams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothStreams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074734AA1C7E1C07006D8D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074734AC1C7E1C07006D8D94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		074734AF1C7E1C07006D8D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074734B11C7E1C07006D8D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074734B41C7E1C07006D8D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		074734B61C7E1C07006D8D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		14A93870F9716E0F15F5EACC /* Pods-SmoothStreams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothStreams.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothStreams/Pods-SmoothStreams.release.xcconfig"; sourceTree = "<group>"; };
+		60649D24703FE367C21BF452 /* Pods-SmoothStreams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothStreams.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothStreams/Pods-SmoothStreams.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074734A41C7E1C07006D8D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A167C28E1868380007F490D9 /* Pods_SmoothStreams.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0747349E1C7E1C07006D8D94 = {
+			isa = PBXGroup;
+			children = (
+				074734A91C7E1C07006D8D94 /* SmoothStreams */,
+				074734A81C7E1C07006D8D94 /* Products */,
+				1E21C6DFA8AC9C46EC91B348 /* Pods */,
+				E652D3AE58E9CECCC60F2FED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		074734A81C7E1C07006D8D94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074734A71C7E1C07006D8D94 /* SmoothStreams.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074734A91C7E1C07006D8D94 /* SmoothStreams */ = {
+			isa = PBXGroup;
+			children = (
+				074734AA1C7E1C07006D8D94 /* AppDelegate.swift */,
+				074734AC1C7E1C07006D8D94 /* LoginViewController.swift */,
+				07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */,
+				074734AE1C7E1C07006D8D94 /* Main.storyboard */,
+				07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */,
+				07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */,
+				074734B11C7E1C07006D8D94 /* Assets.xcassets */,
+				074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */,
+				074734B61C7E1C07006D8D94 /* Info.plist */,
+			);
+			path = SmoothStreams;
+			sourceTree = "<group>";
+		};
+		1E21C6DFA8AC9C46EC91B348 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60649D24703FE367C21BF452 /* Pods-SmoothStreams.debug.xcconfig */,
+				14A93870F9716E0F15F5EACC /* Pods-SmoothStreams.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E652D3AE58E9CECCC60F2FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02CFE76EA35D879ED0E559CB /* Pods_SmoothStreams.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074734A61C7E1C07006D8D94 /* SmoothStreams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074734B91C7E1C07006D8D94 /* Build configuration list for PBXNativeTarget "SmoothStreams" */;
+			buildPhases = (
+				AE3B6FFA92F7389BE190FECD /* Check Pods Manifest.lock */,
+				074734A31C7E1C07006D8D94 /* Sources */,
+				074734A41C7E1C07006D8D94 /* Frameworks */,
+				074734A51C7E1C07006D8D94 /* Resources */,
+				0D2BDB2889D86AD016F6B2A9 /* Embed Pods Frameworks */,
+				A85B3C30E25D9F1F2856382A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmoothStreams;
+			productName = SmoothStreams;
+			productReference = 074734A71C7E1C07006D8D94 /* SmoothStreams.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0747349F1C7E1C07006D8D94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Omar Basrawi";
+				TargetAttributes = {
+					074734A61C7E1C07006D8D94 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 074734A21C7E1C07006D8D94 /* Build configuration list for PBXProject "SmoothStreams" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0747349E1C7E1C07006D8D94;
+			productRefGroup = 074734A81C7E1C07006D8D94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074734A61C7E1C07006D8D94 /* SmoothStreams */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074734A51C7E1C07006D8D94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074734B51C7E1C07006D8D94 /* LaunchScreen.storyboard in Resources */,
+				074734B21C7E1C07006D8D94 /* Assets.xcassets in Resources */,
+				074734B01C7E1C07006D8D94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2BDB2889D86AD016F6B2A9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmoothStreams/Pods-SmoothStreams-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85B3C30E25D9F1F2856382A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmoothStreams/Pods-SmoothStreams-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3B6FFA92F7389BE190FECD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074734A31C7E1C07006D8D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */,
+				074734AD1C7E1C07006D8D94 /* LoginViewController.swift in Sources */,
+				07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */,
+				074734AB1C7E1C07006D8D94 /* AppDelegate.swift in Sources */,
+				07121BA21C867FC100D436FA /* SmoothStreamsAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		074734AE1C7E1C07006D8D94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074734AF1C7E1C07006D8D94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074734B41C7E1C07006D8D94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074734B71C7E1C07006D8D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074734B81C7E1C07006D8D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074734BA1C7E1C07006D8D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60649D24703FE367C21BF452 /* Pods-SmoothStreams.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmoothStreams/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlabs.SmoothStreams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		074734BB1C7E1C07006D8D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A93870F9716E0F15F5EACC /* Pods-SmoothStreams.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmoothStreams/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlabs.SmoothStreams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074734A21C7E1C07006D8D94 /* Build configuration list for PBXProject "SmoothStreams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074734B71C7E1C07006D8D94 /* Debug */,
+				074734B81C7E1C07006D8D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074734B91C7E1C07006D8D94 /* Build configuration list for PBXNativeTarget "SmoothStreams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074734BA1C7E1C07006D8D94 /* Debug */,
+				074734BB1C7E1C07006D8D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0747349F1C7E1C07006D8D94 /* Project object */;
+}
