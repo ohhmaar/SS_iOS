@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07121BA21C867FC100D436FA /* SmoothStreamsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */; };
 		074734AB1C7E1C07006D8D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074734AA1C7E1C07006D8D94 /* AppDelegate.swift */; };
 		074734AD1C7E1C07006D8D94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074734AC1C7E1C07006D8D94 /* LoginViewController.swift */; };
 		074734B01C7E1C07006D8D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734AE1C7E1C07006D8D94 /* Main.storyboard */; };
 		074734B21C7E1C07006D8D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074734B11C7E1C07006D8D94 /* Assets.xcassets */; };
 		074734B51C7E1C07006D8D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */; };
+		07BD1E2E1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */; };
 		07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */; };
 		07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */; };
 		A167C28E1868380007F490D9 /* Pods_SmoothStreams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CFE76EA35D879ED0E559CB /* Pods_SmoothStreams.framework */; };
@@ -20,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		02CFE76EA35D879ED0E559CB /* Pods_SmoothStreams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmoothStreams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothStreamsAPI.swift; sourceTree = SOURCE_ROOT; };
 		074734A71C7E1C07006D8D94 /* SmoothStreams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothStreams.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074734AA1C7E1C07006D8D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		074734AC1C7E1C07006D8D94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		074734B11C7E1C07006D8D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074734B41C7E1C07006D8D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074734B61C7E1C07006D8D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothStreamsAPI.swift; sourceTree = "<group>"; };
 		07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		14A93870F9716E0F15F5EACC /* Pods-SmoothStreams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmoothStreams.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmoothStreams/Pods-SmoothStreams.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				074734AC1C7E1C07006D8D94 /* LoginViewController.swift */,
 				07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */,
 				074734AE1C7E1C07006D8D94 /* Main.storyboard */,
-				07121BA11C867FC100D436FA /* SmoothStreamsAPI.swift */,
+				07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */,
 				07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */,
 				074734B11C7E1C07006D8D94 /* Assets.xcassets */,
 				074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */,
@@ -219,11 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BD1E2E1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift in Sources */,
 				07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */,
 				074734AD1C7E1C07006D8D94 /* LoginViewController.swift in Sources */,
 				07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */,
 				074734AB1C7E1C07006D8D94 /* AppDelegate.swift in Sources */,
-				07121BA21C867FC100D436FA /* SmoothStreamsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
