@@ -6,6 +6,8 @@ use_frameworks!
 target 'SmoothStreams' do
 
 pod 'Locksmith'
+pod 'Fabric'
+pod 'Crashlytics'
 
 end
 

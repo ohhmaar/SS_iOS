@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '95267FCDEF3260723E4485B6'
+               BlueprintIdentifier = '3C436990445DA44903C9C6DF'
                BlueprintName = 'Pods-SmoothStreams'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_SmoothStreams.framework'>

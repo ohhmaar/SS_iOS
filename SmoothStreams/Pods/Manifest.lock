@@ -1,10 +1,17 @@
 PODS:
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.6)
   - Locksmith (2.0.8)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Locksmith
 
 SPEC CHECKSUMS:
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: 1abc1e59f11fa39ede6f690ef7309d8563e3ec59
   Locksmith: a8ed41ac4c06506ea8cb199d8ec8a8d3d108eb2a
 
 COCOAPODS: 0.39.0

@@ -110,6 +110,7 @@
 				074734A51C7E1C07006D8D94 /* Resources */,
 				0D2BDB2889D86AD016F6B2A9 /* Embed Pods Frameworks */,
 				A85B3C30E25D9F1F2856382A /* Copy Pods Resources */,
+				074E116E1C8D0737000C100B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +133,7 @@
 				TargetAttributes = {
 					074734A61C7E1C07006D8D94 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5ECPQ46M6K;
 					};
 				};
 			};
@@ -167,6 +169,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		074E116E1C8D0737000C100B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 764a9fc59caee68b7f5158c2a383f05a37ecf0d7 da982db8e295576993d7a4b1eabf98fe4d28373fcd0ea5ca4f7964ebfed1f85f";
+		};
 		0D2BDB2889D86AD016F6B2A9 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,12 +349,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60649D24703FE367C21BF452 /* Pods-SmoothStreams.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmoothStreams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlabs.SmoothStreams;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlab.SmoothStreams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,12 +366,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A93870F9716E0F15F5EACC /* Pods-SmoothStreams.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SmoothStreams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlabs.SmoothStreams;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniwahlab.SmoothStreams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
