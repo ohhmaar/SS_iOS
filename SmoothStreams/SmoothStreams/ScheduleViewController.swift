@@ -42,6 +42,11 @@ class ScheduleViewController: UITableViewController {
 
 				print(URL)
 				playerViewController.player = AVPlayer(URL: URL)
+				do {
+				try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+				} catch {
+					print("failure")
+				}
 				playerViewController.player?.play()
 
 			})
