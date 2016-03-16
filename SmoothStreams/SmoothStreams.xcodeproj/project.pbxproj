@@ -12,6 +12,7 @@
 		074734B01C7E1C07006D8D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734AE1C7E1C07006D8D94 /* Main.storyboard */; };
 		074734B21C7E1C07006D8D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074734B11C7E1C07006D8D94 /* Assets.xcassets */; };
 		074734B51C7E1C07006D8D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074734B31C7E1C07006D8D94 /* LaunchScreen.storyboard */; };
+		0757A6EE1C97B66300F3D6D1 /* ExtraOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0757A6ED1C97B66300F3D6D1 /* ExtraOptionsTableViewController.swift */; };
 		07BD1E2E1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */; };
 		07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */; };
 		07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */; };
@@ -27,6 +28,7 @@
 		074734B11C7E1C07006D8D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074734B41C7E1C07006D8D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074734B61C7E1C07006D8D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0757A6ED1C97B66300F3D6D1 /* ExtraOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraOptionsTableViewController.swift; sourceTree = "<group>"; };
 		07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothStreamsAPI.swift; sourceTree = "<group>"; };
 		07CF862C1C8103FD00370AD2 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				074734AA1C7E1C07006D8D94 /* AppDelegate.swift */,
 				074734AC1C7E1C07006D8D94 /* LoginViewController.swift */,
+				0757A6ED1C97B66300F3D6D1 /* ExtraOptionsTableViewController.swift */,
 				07FD50E11C7E4F3E00668CB4 /* ServicesViewController.swift */,
 				074734AE1C7E1C07006D8D94 /* Main.storyboard */,
 				07BD1E2D1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift */,
@@ -237,6 +240,7 @@
 				07BD1E2E1C8CFA3700F41CC9 /* SmoothStreamsAPI.swift in Sources */,
 				07FD50E21C7E4F3E00668CB4 /* ServicesViewController.swift in Sources */,
 				074734AD1C7E1C07006D8D94 /* LoginViewController.swift in Sources */,
+				0757A6EE1C97B66300F3D6D1 /* ExtraOptionsTableViewController.swift in Sources */,
 				07CF862D1C8103FD00370AD2 /* ScheduleViewController.swift in Sources */,
 				074734AB1C7E1C07006D8D94 /* AppDelegate.swift in Sources */,
 			);
@@ -352,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = SmoothStreams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = SmoothStreams/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
