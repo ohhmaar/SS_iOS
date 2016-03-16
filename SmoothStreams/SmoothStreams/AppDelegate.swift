@@ -5,6 +5,8 @@
 //  Created by Omar Basrawi on 2/24/16.
 //  Copyright © 2016 Omar Basrawi. All rights reserved.
 //
+let LOW_QUALITY_STREAM = "q1"
+let HIGH_QUALITY_STREAM = "q2"
 
 import UIKit
 import Fabric
