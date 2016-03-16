@@ -46,7 +46,8 @@ struct Services {
 		]
 	}
 
-	func serviceForRow(slot: Int) -> PossibleServices {
+	// Returns
+	func serviceDetailsForRow(slot: Int) -> PossibleServices {
 		let returnValue = self.test[slot]
 
 		return returnValue
@@ -120,6 +121,18 @@ class AuthenticationManager {
 		onSuccess(authenticationManager)
 	}
 
+	func clearSessionAndLogout() {
+		
+		NSUserDefaults.standardUserDefaults().removeObjectForKey("site")
+
+		do {
+
+			try Locksmith.deleteDataForUserAccount(AuthenticationManager.ManagerAccount)
+
+			} catch { print("Could not clearSession")
+		}
+	}
+
 	static func request(email: String, password: String, host: String, completionHandler: AuthenticationManager? -> ()) {
 		let baseURL = NSURL(string: "http://smoothstreams.tv/schedule/admin/dash_new/hash_api.php?username=\(email)&password=\(password)&site=\(host)")!
 
@@ -158,7 +171,6 @@ class AuthenticationManager {
 			}
 			
 		}
-		
 		task.resume()
 	}
 }
