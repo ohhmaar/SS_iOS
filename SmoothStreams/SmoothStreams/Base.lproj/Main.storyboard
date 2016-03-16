@@ -199,7 +199,90 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Quz-qE-msY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="205"/>
+            <point key="canvasLocation" x="3706" y="-115"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="9Me-2V-xee">
+            <objects>
+                <tableViewController id="Fmw-Ub-Jmj" customClass="ExtraOptionsTableViewController" customModule="SmoothStreams" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bff-Hf-Bfm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="QualityCellIdentifier" textLabel="2Kd-Ar-1cr" detailTextLabel="q8X-qa-S0r" style="IBUITableViewCellStyleValue1" id="ZuY-nS-UwW">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZuY-nS-UwW" id="m29-6r-Rr8">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Kd-Ar-1cr">
+                                            <rect key="frame" x="15" y="12" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q8X-qa-S0r">
+                                            <rect key="frame" x="543" y="12" width="42" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LogoutCellIdentifier" id="TQ0-JX-gpK" customClass="LogoutTableViewCell" customModule="SmoothStreams" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TQ0-JX-gpK" id="HGS-ok-Ot2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bn-Ss-cvy">
+                                            <rect key="frame" x="263" y="11" width="75" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="PCI-0G-lMZ"/>
+                                                <constraint firstAttribute="height" constant="26" id="q8X-JU-fmK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6Bn-Ss-cvy" firstAttribute="centerX" secondItem="HGS-ok-Ot2" secondAttribute="centerX" id="GiW-3p-vOA"/>
+                                        <constraint firstItem="6Bn-Ss-cvy" firstAttribute="centerY" secondItem="HGS-ok-Ot2" secondAttribute="centerY" constant="2.5" id="Yor-ZT-djJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="logoutLabel" destination="6Bn-Ss-cvy" id="VsH-YU-zhE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Fmw-Ub-Jmj" id="Sya-If-FKJ"/>
+                            <outlet property="delegate" destination="Fmw-Ub-Jmj" id="M07-3H-BuZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="eqK-MX-LeV">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="BBQ-BW-hFe">
+                            <connections>
+                                <action selector="dismissSettings:" destination="Fmw-Ub-Jmj" id="icE-pP-ZVp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="spC-vU-8Ez" kind="unwind" identifier="LogoutToServicesViewControllerSegue" unwindAction="unwindSegueFromLogout:" id="o8w-5F-f2n"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZ2-q4-Cdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="spC-vU-8Ez" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5340" y="-487"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="r4g-NW-FAY">
