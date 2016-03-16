@@ -11,30 +11,30 @@ import Locksmith
 
 class ServicesViewController: UIViewController {
 
+	let ServicesCellIdentifier = "ServicesCellIdentifier"
+
 	//@IBOutlets
 
 	@IBOutlet weak var tableView: UITableView!
-	@IBOutlet weak var continueButton: UIButton!
+	@IBOutlet weak var continueButton: UIButton! {
+		didSet {
+			 self.continueButton.layer.cornerRadius = CGFloat(5)
+		}
+	}
 
 	var services = Services()
 
 	let prefs = NSUserDefaults.standardUserDefaults()
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
 
+		guard let path = self.tableView.indexPathForSelectedRow else { return }
+
+		// Clear selection disable continue button
+		tableView.deselectRowAtIndexPath(path, animated: true)
+		validateService()
 	}
-
-//	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//		if segue.identifier == "ServicesToLoginSegue" {
-//			if let destinationViewController = segue.destinationViewController as? LoginViewController {
-//
-////				let s = services.serviceForRow(tableView.indexPathForSelectedRow.flatMap {$0.row}!)
-////				//prefs.setObject(s, forKey: "service")
-//			}
-//			
-//		}
-//	}
 
 	private func validateService() {
 		continueButton.enabled = validTableViewRow
@@ -42,6 +42,10 @@ class ServicesViewController: UIViewController {
 
 	private var validTableViewRow: Bool {
 		return tableView.indexPathForSelectedRow != nil
+	}
+
+	@IBAction func unwindSegueFromLogout(segue: UIStoryboardSegue) {
+		
 	}
 
 }
@@ -56,16 +60,16 @@ extension ServicesViewController: UITableViewDataSource, UITableViewDelegate {
 		validateService()
 	}
 
-
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return services.test.count
 	}
 
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("test", forIndexPath: indexPath) as UITableViewCell
+		let cell = tableView.dequeueReusableCellWithIdentifier(ServicesCellIdentifier, forIndexPath: indexPath) as UITableViewCell
 
 		let service = services.test[indexPath.row]
 		cell.textLabel?.text = service.name
+
 		return cell
 	}
 }
