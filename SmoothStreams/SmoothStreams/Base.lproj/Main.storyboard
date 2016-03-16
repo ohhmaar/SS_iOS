@@ -290,7 +290,7 @@
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6ho-m1-rgJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqk-sy-cDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3547" y="205"/>
+            <point key="canvasLocation" x="4499" y="260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MuN-XP-0LQ">
@@ -359,4 +359,7 @@
             <point key="canvasLocation" x="4528" y="-487"/>
         </scene>
     </scenes>
+    <resources>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
