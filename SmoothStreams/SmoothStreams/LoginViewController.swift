@@ -10,9 +10,18 @@ import UIKit
 import Locksmith
 
 class LoginViewController: UIViewController {
+	let LoginToScheduleSegue = "LoginToScheduleSegue"
 
+	// MARK - @IBOutlets
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
+	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
+	@IBOutlet weak var loginButton: UIButton! {
+		didSet {
+			self.loginButton.layer.cornerRadius = CGFloat(5)
+		}
+	}
 
 	var mode = Services()
 
@@ -41,13 +50,15 @@ class LoginViewController: UIViewController {
 	}
 
 	@IBAction func userLogin(sender: UIButton) {
+		self.activityIndicator.hidden = false
+		self.activityIndicator.startAnimating()
 		login()
 	}
 
 	func login() {
 		let prefs = NSUserDefaults.standardUserDefaults()
 		let s = prefs.valueForKey("site") as! Int
-		let a = mode.serviceForRow(s)
+		let a = mode.serviceDetailsForRow(s)
 
 		guard let email = emailTextField.text else {
 			return
@@ -63,26 +74,37 @@ class LoginViewController: UIViewController {
 			}
 			
 			if authManager.code.getType {
-				dispatch_async(dispatch_get_main_queue(), { () -> Void in
-				self.performSegueWithIdentifier("LoginToScheduleSegue", sender: self)
-
+				NSOperationQueue.mainQueue().addOperationWithBlock({
+					self.activityIndicator.stopAnimating()
+					self.performSegueWithIdentifier(self.LoginToScheduleSegue, sender: self)
 				})
 
 			} else {
 
 				let alertVC = UIAlertController(title: "Hold up", message: authManager.error, preferredStyle: UIAlertControllerStyle.Alert)
-				let dismissAction = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+				let dismissAction = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: { _ in
 					alertVC.dismissViewControllerAnimated(true, completion: nil)
 				})
 					alertVC.addAction(dismissAction)
 
 				dispatch_async(dispatch_get_main_queue(), { () -> Void in
-				self.presentViewController(alertVC, animated: true, completion: nil)
+					self.activityIndicator.stopAnimating()
+					self.presentViewController(alertVC, animated: true, completion: nil)
 				})
 			}
+		}
+	}
+}
 
+extension LoginViewController: UITextFieldDelegate {
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+
+		if textField == emailTextField {
+			passwordTextField.becomeFirstResponder()
+		} else if textField == passwordTextField {
+			passwordTextField.resignFirstResponder()
 		}
 
+		return true
 	}
-
 }
