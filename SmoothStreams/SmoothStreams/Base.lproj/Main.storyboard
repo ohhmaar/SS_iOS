@@ -100,7 +100,6 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-zB-c4Z">
-                                <rect key="frame" x="178" y="235" width="245" height="30"/>
                                 <rect key="frame" x="20" y="280" width="560" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.71764705880000002" green="0.34509803919999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="1849" y="322"/>
         </scene>
-        <!--Schedule View Controller-->
+        <!--Schedule-->
         <scene sceneID="yGF-0H-dcR">
             <objects>
                 <tableViewController id="5HQ-wW-6Oy" customClass="ScheduleViewController" customModule="SmoothStreams" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,6 +188,14 @@
                             <outlet property="delegate" destination="5HQ-wW-6Oy" id="iRq-Ts-EcK"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="EdX-cy-q0e">
+                        <barButtonItem key="rightBarButtonItem" image="Image" id="tlx-7m-BVP">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="yR5-R7-dKK" kind="presentation" identifier="OptionsSegue" id="chD-us-TKL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Quz-qE-msY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
