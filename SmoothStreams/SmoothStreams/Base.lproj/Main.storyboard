@@ -189,7 +189,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Schedule" id="EdX-cy-q0e">
-                        <barButtonItem key="rightBarButtonItem" image="Image" id="tlx-7m-BVP">
+                        <barButtonItem key="rightBarButtonItem" image="Settings" id="tlx-7m-BVP">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="yR5-R7-dKK" kind="presentation" identifier="OptionsSegue" id="chD-us-TKL"/>
@@ -360,6 +360,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Settings" width="22" height="22"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
